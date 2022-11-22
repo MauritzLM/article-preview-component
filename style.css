@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Manrope', sans-serif;
+    font-size: 10px;
+}
+
+body {
+    height: 100vh;
+    font-size: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(210, 46%, 95%);
+    gap: 8em;
+
+}
+
+h1 {
+    color: hsl(217, 19%, 35%);
+    font-size: 1.6rem;
+    margin-top: 1.8em;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-bottom: .2em;
+    color: hsl(217, 19%, 35%);
+}
+
+p {
+    margin-top: .4em;
+    color: hsl(214, 17%, 51%);
+}
+
+h1+p {
+    line-height: 1.6;
+}
+
+/* img {
+    width: 100%;
+} */
+
+
+main {
+    border-radius: 1em;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.furniture-img {
+    height: 215px;
+    overflow: hidden;
+}
+
+.furniture-img img {
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+    width: 100%;
+}
+
+
+
+article {
+    padding: 1em 2.3em;
+    position: relative;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.profile-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+}
+
+.share-icon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    /* flex: 10%; */
+    float: right;
+    position: relative;
+    bottom: 3em;
+}
+
+.share-icon button {
+    border: none;
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50%;
+}
+
+/* .profile div {
+    margin-right: 1em;
+} */
+
+.avatar-img img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+
+}
+
+
+.social {
+    visibility: collapse;
+    position: absolute;
+    bottom: 1em;
+}
+
+.share-icon:focus-within+.social,
+.share-icon:hover+.social {
+    visibility: visible;
+
+}
+
+footer {
+    font-size: 11px;
+    text-align: center;
+}
+
+footer a {
+    color: hsl(228, 45%, 44%);
+}
