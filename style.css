@@ -22,12 +22,12 @@ body {
 h1 {
     color: hsl(217, 19%, 35%);
     font-size: 1.6rem;
-    margin-top: 1.8em;
+    margin-top: 1.6em;
     line-height: 1.5;
 }
 
 h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-bottom: .2em;
     color: hsl(217, 19%, 35%);
 }
@@ -35,8 +35,10 @@ h2 {
 h3 {
     font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: .2em;
-    font-size: 1.4rem;
+    letter-spacing: .3em;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: hsl(212, 23%, 69%);
 }
 
 p {
@@ -46,15 +48,16 @@ p {
 
 h1+p {
     line-height: 1.6;
+    margin-bottom: .8em;
 }
 
 img {
-    display: block;
+    display: inline-block;
 }
 
 
 main {
-    border-radius: 1em;
+    border-radius: .5em;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -67,15 +70,13 @@ main {
 }
 
 .furniture-img img {
-    border-top-right-radius: 1em;
-    border-top-left-radius: 1em;
+    border-top-right-radius: .5em;
+    border-top-left-radius: .5em;
     width: 100%;
 }
 
-
-
 article {
-    padding: 1em 2.3em 0 2.3em;
+    padding: 1em 2.7em 0 2.7em;
     position: relative;
 }
 
@@ -83,7 +84,7 @@ article {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1em;
+    margin-top: .8em;
     position: relative;
     top: .8em;
 }
@@ -108,11 +109,18 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 50%;
-    padding: .6em;
+    padding: .7em;
 }
 
 .share-icon button {
     background-color: hsl(210, 46%, 95%);
+}
+
+.share-icon button img {
+    position: relative;
+    bottom: .1em;
+    left: .05em;
+
 }
 
 .avatar-img img {
@@ -125,15 +133,15 @@ button {
 .social {
     visibility: collapse;
     position: absolute;
-    bottom: 0;
+    bottom: 0.1em;
     right: .1em;
     color: white;
     background-color: hsl(217, 19%, 35%);
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 1.2em;
+    height: 70px;
+    padding: 1.2em 1.1em 1.2em 2.8em;
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
 }
@@ -141,14 +149,20 @@ button {
 .social-wrapper {
     display: flex;
     align-items: center;
-    gap: 2em;
-    flex-grow: 2;
+    gap: 1em;
 
 }
 
 .social-links {
     display: flex;
+    gap: 1.2em;
     justify-content: space-between;
+    align-items: center;
+}
+
+.social-links img {
+    height: 20px;
+    width: 20px;
 }
 
 .share-icon-alt {
@@ -157,12 +171,14 @@ button {
     height: 20px;
     float: right;
     position: relative;
-    bottom: .9em;
-    right: 1.9em;
+    bottom: .6em;
+    left: 3.2em;
 }
 
 .share-icon-alt button {
     background-color: hsl(214, 17%, 51%);
+    color: hsl(0, 0%, 100%);
+    padding: .6em;
 }
 
 .share-icon:focus-within+.social {
@@ -176,4 +192,53 @@ footer {
 
 footer a {
     color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 600px) {
+    main {
+        flex-direction: row;
+        width: 720px;
+    }
+
+    .furniture-img {
+        width: 100%;
+        height: auto;
+    }
+
+    article {
+        padding-top: 1.2em;
+        padding-right: 2em;
+
+    }
+
+    .furniture-img img {
+        border-top-right-radius: 0;
+        border-top-left-radius: .5em;
+        border-bottom-left-radius: .5em;
+        border-top-right-radius: 0;
+        height: 100%;
+        width: 340px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-top: .7em;
+        margin-bottom: .6em;
+        padding-right: 1.5em;
+    }
+
+    h1+p {
+        margin-top: .6em;
+        margin-bottom: .2em;
+    }
+
+    .profile {
+        margin-top: .2em;
+    }
+
+    .share-icon {
+        right: 3em;
+    }
 }
