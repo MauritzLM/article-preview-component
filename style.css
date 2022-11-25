@@ -29,6 +29,7 @@ h1 {
 h2 {
     font-size: 1.3rem;
     margin-bottom: .2em;
+    margin-top: 0;
     color: hsl(217, 19%, 35%);
 }
 
@@ -36,7 +37,7 @@ h3 {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: .3em;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 400;
     color: hsl(212, 23%, 69%);
 }
@@ -49,6 +50,12 @@ p {
 h1+p {
     line-height: 1.6;
     margin-bottom: .8em;
+}
+
+h2+p {
+    margin-bottom: 0;
+    margin-top: .2em;
+    color: hsl(212, 23%, 69%);
 }
 
 img {
@@ -76,7 +83,7 @@ main {
 }
 
 article {
-    padding: 1em 2.7em 0 2.7em;
+    padding: 1em 2.7em .6em 2.7em;
     position: relative;
 }
 
@@ -84,7 +91,7 @@ article {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: .8em;
+    margin-top: 1.4em;
     position: relative;
     top: .8em;
 }
@@ -101,7 +108,7 @@ article {
     height: 20px;
     float: right;
     position: relative;
-    bottom: 3em;
+    bottom: 2.2em;
     right: .7em;
 }
 
@@ -109,7 +116,7 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 50%;
-    padding: .7em;
+    padding: .6em .7em;
 }
 
 .share-icon button {
@@ -118,20 +125,20 @@ button {
 
 .share-icon button img {
     position: relative;
-    bottom: .1em;
+    top: .07em;
     left: .05em;
 
 }
 
 .avatar-img img {
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
 
 }
 
 .social {
-    visibility: collapse;
+    visibility: hidden;
     position: absolute;
     bottom: 0.1em;
     right: .1em;
@@ -142,21 +149,23 @@ button {
     width: 100%;
     height: 70px;
     padding: 1.2em 1.1em 1.2em 2.8em;
-    border-bottom-left-radius: 1em;
-    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: .5em;
+    border-bottom-right-radius: .5em;
+    /* transition: all 1s ease-out; */
 }
 
 .social-wrapper {
     display: flex;
     align-items: center;
-    gap: 1em;
+    gap: 1.5em;
 
 }
 
 .social-links {
     display: flex;
     gap: 1.2em;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    margin-top: .2em;
     align-items: center;
 }
 
@@ -171,14 +180,22 @@ button {
     height: 20px;
     float: right;
     position: relative;
-    bottom: .6em;
-    left: 3.2em;
+    bottom: .5em;
+    left: 3.7em;
 }
 
 .share-icon-alt button {
     background-color: hsl(214, 17%, 51%);
     color: hsl(0, 0%, 100%);
-    padding: .6em;
+    padding: .5em .6em;
+
+}
+
+.share-icon-alt button img {
+    position: relative;
+    left: .05em;
+    top: .1em;
+    color: white;
 }
 
 .share-icon:focus-within+.social {
@@ -208,9 +225,7 @@ footer a {
     }
 
     article {
-        padding-top: 1.2em;
-        padding-right: 2em;
-
+        padding: 1.2em 1em .6em 3em;
     }
 
     .furniture-img img {
@@ -232,13 +247,49 @@ footer a {
     h1+p {
         margin-top: .6em;
         margin-bottom: .2em;
+        padding-right: 1.5em;
     }
 
     .profile {
-        margin-top: .2em;
+        margin-top: .9em;
+        margin-bottom: .8em;
     }
 
     .share-icon {
-        right: 3em;
+        right: 4em;
+        bottom: 3em;
+    }
+
+    .social {
+        width: 250px;
+        height: 55px;
+        border-radius: 1em;
+        bottom: 7.4em;
+        right: -4.4em;
+        box-shadow: 0px 5px 5px hsla(212, 23%, 69%, 0.404);
+    }
+
+    .social::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -10px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+
+    .social-wrapper {
+        width: 100%;
+        gap: 1.6em;
+    }
+
+    .social-links {
+        gap: 1.4em;
+    }
+
+    .share-icon-alt {
+        display: none;
     }
 }
