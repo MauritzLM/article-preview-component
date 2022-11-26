@@ -83,17 +83,15 @@ main {
 }
 
 article {
-    padding: 1em 2.7em .6em 2.7em;
+    padding: 1em 2.7em 1.2em 2.7em;
     position: relative;
 }
 
 .profile {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 1.4em;
+    margin-top: 2.7em;
     position: relative;
-    top: .8em;
 }
 
 .profile-wrapper {
@@ -103,13 +101,11 @@ article {
 }
 
 .share-icon {
-    display: block;
     width: 20px;
     height: 20px;
-    float: right;
-    position: relative;
-    bottom: 2.2em;
-    right: .7em;
+    position: absolute;
+    bottom: 11.5%;
+    right: 15%;
 }
 
 button {
@@ -123,11 +119,11 @@ button {
     background-color: hsl(210, 46%, 95%);
 }
 
-.share-icon button img {
-    position: relative;
-    top: .07em;
-    left: .05em;
 
+
+.share-icon ion-icon {
+    font-size: 18px;
+    color: hsl(214, 17%, 51%);
 }
 
 .avatar-img img {
@@ -164,7 +160,6 @@ button {
 .social-links {
     display: flex;
     gap: 1.2em;
-    /* justify-content: space-between; */
     margin-top: .2em;
     align-items: center;
 }
@@ -178,10 +173,9 @@ button {
     display: block;
     width: 20px;
     height: 20px;
-    float: right;
     position: relative;
-    bottom: .5em;
-    left: 3.7em;
+    bottom: .7em;
+    left: 3.4em;
 }
 
 .share-icon-alt button {
@@ -191,10 +185,8 @@ button {
 
 }
 
-.share-icon-alt button img {
-    position: relative;
-    left: .05em;
-    top: .1em;
+.share-icon-alt ion-icon {
+    font-size: 18px;
     color: white;
 }
 
@@ -251,13 +243,12 @@ footer a {
     }
 
     .profile {
-        margin-top: .9em;
-        margin-bottom: .8em;
+        margin-top: 2em;
+        margin-bottom: 1em;
     }
 
     .share-icon {
-        right: 4em;
-        bottom: 3em;
+        bottom: 14.5%;
     }
 
     .social {
