@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/article-preview-component-html-and-css-Cy9KtWoXtQ)
+- Live Site URL: [live site URL](https://mauritzlm.github.io/article-preview-component/)
 
 ## My process
 
@@ -66,12 +66,12 @@ I want to continue learning about html and css best practices when planning and 
 
 ### Useful resources
 
-- [arrow popup border](https://www.w3schools.com/howto/howto_js_popup.asp) - Tutorial on how to create popups. I'm sure I'll be using this again in the future.
-- [css only accessible dropdown](https://moderncss.dev/css-only-accessible-dropdown-navigation-menu/) - I learned a lot from this article, including using :focus-within and using rotateX(-90%) to remove height so one can add an animation.
+- [Popup tutorial](https://www.w3schools.com/howto/howto_js_popup.asp) - Tutorial on how to create popups. I'm sure I'll be using this again in the future.
+- [CSS only accessible dropdown](https://moderncss.dev/css-only-accessible-dropdown-navigation-menu/) - I learned a lot from this article, including using :focus-within and using rotateX(-90%) to remove height so one can add an animation.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@MauritzLM](https://www.frontendmentor.io/profile/MauritzLM)
 
 
 
